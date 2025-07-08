@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: inked-shipping-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: UPS_USERNAME
+        value: your_ups_username
+      - key: UPS_PASSWORD
+        value: your_ups_password
+      - key: UPS_ACCESS_KEY
+        value: your_ups_access_key
+      - key: UPS_ORIGIN_ZIP
+        value: 24060
