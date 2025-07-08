@@ -13,4 +13,4 @@ services:
       - key: UPS_ACCESS_KEY
         value: your_ups_access_key
       - key: UPS_ORIGIN_ZIP
-        value: 24060
+        value: 24090
