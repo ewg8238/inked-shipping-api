@@ -2,7 +2,6 @@ Shipment: {
   Shipper: {
     Address: {
       PostalCode: process.env.UPS_ORIGIN_ZIP,
-      CountryCode: 'US'
     }
   },
   ShipTo: {
