@@ -63,6 +63,7 @@ app.post('/get-shipping-estimate', async (req, res) => {
       }
     });
 
+    console.log('UPS raw response:', JSON.stringify(response.data, null, 2));
     const charges = response.data?.RateResponse?.RatedShipment?.TotalCharges?.MonetaryValue || null;
 
     // Log UPS response
